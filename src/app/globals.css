@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Variables */
+:root {
+  --background-color: #f7f7f7; /* Light gray background */
+  --foreground-color: #000000; /* Default text color */
+  --highlight-color: #1e90ff; /* Accent color for buttons, links */
+  --hover-highlight-color: #ffcc00; /* Hover color for links/buttons */
+  --navbar-background: #2d2d2d; /* Dark navbar background */
+  --navbar-text: #ffffff; /* Navbar text color */
+  --background-image: url("https://wallpapers.com/images/hd/medical-background-cjge7e89adg6ub8x.jpg");
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--foreground-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Typography Styling */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--foreground-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-highlight-color);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--navbar-background);
+  color: var(--navbar-text);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--highlight-color);
+}
+
+/* Initials Styling (e.g., User Avatar) */
+.initials {
+  background-color: var(--highlight-color);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* Section Patterns */
+.bg-medical-pattern {
+  background-image: url('/images/medical-background.jpg'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Button Styling */
+button {
+  background-color: var(--highlight-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover-highlight-color);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: var(--highlight-color);
+}
+
+footer a:hover {
+  color: var(--hover-highlight-color);
+}
+
+/* Responsive Utility */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar a {
+    margin: 5px 0;
+  }
+}
+/* globals.css or any custom styles */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+}
