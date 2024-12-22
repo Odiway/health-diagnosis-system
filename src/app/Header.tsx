@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FaHome, FaUser, FaSignInAlt, FaUserPlus, FaStethoscope } from "react-icons/fa"; // Import icons
 import { ClerkProvider } from "@clerk/nextjs"; // Ensure Clerk provider wraps the layout
 import "./globals.css";
-
+W
 export const metadata = {
   title: "Health Diagnosis System",
   description: "A better health diagnosis system",

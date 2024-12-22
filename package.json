@@ -12,6 +12,7 @@
     "@clerk/clerk-react": "^5.17.1",
     "@clerk/nextjs": "^6.5.1",
     "autoprefixer": "^10.4.20",
+    "axios": "^1.7.9",
     "health-diagnosis-system": "file:",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",

@@ -10,6 +10,7 @@ import {
   FaSignInAlt,
   FaUserPlus,
   FaClipboardList,
+  FaCloudSun,
 } from "react-icons/fa"; // Added FaClipboardList for the Diseases page
 import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
@@ -77,6 +78,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className="flex items-center text-white hover:text-yellow-400 transition duration-300 ease-in-out"
       >
         <FaUserPlus className="mr-2" /> Sign Up
+      </Link>
+      <Link
+        href="/weather"
+        className="flex items-center text-white hover:text-yellow-400 transition duration-300 ease-in-out"
+      >
+        <FaCloudSun className="mr-2" /> Weather
       </Link>
     </div>
   </nav>
